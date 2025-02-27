@@ -1,0 +1,56 @@
+#include<iostream>
+#include<string>
+#include<map>
+ 
+using namespace std;
+int main()
+{
+    /*string string1("hello world");
+    string string2 = "Hello world";
+ 
+    int position = string1.find("world");
+    cout << "the world starts at position :"<<position<<endl;
+ 
+ 
+    string substring = string1.substr(1,5);
+    cout << "sub string" <<substring<<endl;
+ 
+    return 0;
+ 
+ 
+    string str1 = "areee bhaii";
+    string str2 = "ki obostha?";
+ 
+    int length =str1.length();
+    cout << "Length of string 1: " */
+ 
+ 
+ 
+    map <string,int> fruits;
+ 
+    fruits ["apple"] = 3;
+     fruits ["mango"] = 4;
+      fruits ["orange"] = 5;
+ 
+      for(auto i = fruits.begin();i!=fruits.end();i++)
+      {
+          cout<<i->first<<":"<<i->second<<endl;
+      }
+ 
+ 
+      auto it= fruits.find ("mango");
+      if (it!=fruits.end())
+      {
+          fruits["mango"]+=4;
+      }
+ 
+      it=fruits.find("orange");
+      if(it!=fruits.end()) fruits.erase(it);
+ 
+      for(auto i:fruits)
+        cout<<i.first<<" "<<i.second<<endl;
+ 
+ 
+ 
+}
+ 
